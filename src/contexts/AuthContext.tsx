@@ -10,9 +10,9 @@ interface StoreInfo {
 
 interface User {
   id?: string
-  fullName: string
-  email: string
-  phone: string
+  fullName?: string
+  email?: string
+  phone?: string
   departmentId?: number
   municipalityId?: number
   store?: StoreInfo | null;
