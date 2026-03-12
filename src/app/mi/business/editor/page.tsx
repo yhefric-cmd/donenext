@@ -18,7 +18,9 @@ export default function StoreEditorPage() {
     }
 
     // Cargar tienda del usuario
-    loadStore(user.id)
+    if (user.id) {
+      loadStore(user.id)
+    }
   }, [user, router, loadStore])
 
   if (!user) {
