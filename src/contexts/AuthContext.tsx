@@ -9,7 +9,7 @@ interface StoreInfo {
 }
 
 interface User {
-  id: string
+  id?: string
   fullName: string
   email: string
   phone: string
